@@ -17,7 +17,7 @@ import uk.ac.ucl.comp0010.model.Student;
  * Integration tests for GradeRepository.
  */
 @DataJpaTest
-class GradeRepositoryTest {
+public class GradeRepositoryTest {
 
   @Autowired
   private GradeRepository gradeRepository;

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for the Module model class.
  */
-class ModuleTest {
+public class ModuleTest {
 
   private Module module;
 

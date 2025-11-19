@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for NoGradeAvailableException.
  */
-class NoGradeAvailableExceptionTest {
+public class NoGradeAvailableExceptionTest {
 
   /**
    * Test default constructor.

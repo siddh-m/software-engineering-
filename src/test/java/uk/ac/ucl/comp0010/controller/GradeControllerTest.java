@@ -25,7 +25,7 @@ import uk.ac.ucl.comp0010.repository.StudentRepository;
 /**
  * Unit tests for GradeController.
  */
-class GradeControllerTest {
+public class GradeControllerTest {
 
   @Mock
   private StudentRepository studentRepository;

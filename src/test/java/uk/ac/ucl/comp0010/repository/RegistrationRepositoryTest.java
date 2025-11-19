@@ -17,7 +17,7 @@ import uk.ac.ucl.comp0010.model.Student;
  * Integration tests for RegistrationRepository.
  */
 @DataJpaTest
-class RegistrationRepositoryTest {
+public class RegistrationRepositoryTest {
 
   @Autowired
   private RegistrationRepository registrationRepository;

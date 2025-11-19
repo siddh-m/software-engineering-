@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for the Student model class.
  */
-class StudentTest {
+public class StudentTest {
 
   private Student student;
 

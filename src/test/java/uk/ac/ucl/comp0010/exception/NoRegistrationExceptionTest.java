@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for NoRegistrationException.
  */
-class NoRegistrationExceptionTest {
+public class NoRegistrationExceptionTest {
 
   /**
    * Test default constructor.

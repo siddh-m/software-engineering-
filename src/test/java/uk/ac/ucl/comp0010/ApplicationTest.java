@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * Integration test for the Spring Boot Application.
  */
 @SpringBootTest
-class ApplicationTest {
+public class ApplicationTest {
 
   /**
    * Test that the application context loads successfully.

@@ -14,7 +14,7 @@ import uk.ac.ucl.comp0010.model.Module;
  * Integration tests for ModuleRepository.
  */
 @DataJpaTest
-class ModuleRepositoryTest {
+public class ModuleRepositoryTest {
 
   @Autowired
   private ModuleRepository moduleRepository;

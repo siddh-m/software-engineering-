@@ -24,7 +24,7 @@ import uk.ac.ucl.comp0010.repository.StudentRepository;
 @SpringBootTest
 @AutoConfigureMockMvc
 @WithMockUser
-class GradeControllerIntegrationTest {
+public class GradeControllerIntegrationTest {
 
   @Autowired
   private MockMvc mockMvc;
