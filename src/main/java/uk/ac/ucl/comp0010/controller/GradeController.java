@@ -70,7 +70,7 @@ public class GradeController {
       String studentIdStr = params.get("student_id");
       String moduleCode = params.get("module_code");
       String scoreStr = params.get("score");
-      String academicYear = params.get("academic_year");
+      final String academicYear = params.get("academic_year");
 
       // Validate parameters
       if (studentIdStr == null || moduleCode == null || scoreStr == null) {
