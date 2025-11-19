@@ -25,6 +25,9 @@ public class Grade {
   @Column(name = "score")
   private Integer score;
 
+  @Column(name = "academic_year")
+  private String academicYear;
+
   @ManyToOne
   @JoinColumn(name = "student_id", referencedColumnName = "id")
   private Student student;
@@ -48,6 +51,21 @@ public class Grade {
    */
   public Grade(Integer score, Student student, Module module) {
     this.score = score;
+    this.student = student;
+    this.module = module;
+  }
+
+  /**
+   * Constructor with all fields including academic year.
+   *
+   * @param score the grade score
+   * @param academicYear the academic year (e.g., "2024-2025")
+   * @param student the student who received the grade
+   * @param module the module for which the grade was awarded
+   */
+  public Grade(Integer score, String academicYear, Student student, Module module) {
+    this.score = score;
+    this.academicYear = academicYear;
     this.student = student;
     this.module = module;
   }
@@ -82,5 +100,13 @@ public class Grade {
 
   public void setModule(Module module) {
     this.module = module;
+  }
+
+  public String getAcademicYear() {
+    return academicYear;
+  }
+
+  public void setAcademicYear(String academicYear) {
+    this.academicYear = academicYear;
   }
 }

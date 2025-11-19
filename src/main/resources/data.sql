@@ -27,9 +27,9 @@ INSERT INTO registration (student_id, module_code) VALUES
   (3, 'COMP0012');
 
 -- Insert sample grades
-INSERT INTO grade (score, student_id, module_code) VALUES
-  (85, 1, 'COMP0010'),
-  (92, 1, 'COMP0011'),
-  (78, 2, 'COMP0010'),
-  (88, 2, 'COMP0012'),
-  (95, 3, 'COMP0011');
+INSERT INTO grade (score, academic_year, student_id, module_code) VALUES
+  (85, '2024-2025', 1, 'COMP0010'),
+  (92, '2024-2025', 1, 'COMP0011'),
+  (78, '2024-2025', 2, 'COMP0010'),
+  (88, '2024-2025', 2, 'COMP0012'),
+  (95, '2024-2025', 3, 'COMP0011');

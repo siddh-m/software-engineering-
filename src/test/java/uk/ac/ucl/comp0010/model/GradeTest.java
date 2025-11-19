@@ -98,4 +98,26 @@ public class GradeTest {
     assertEquals(student, grade.getStudent());
     assertEquals(module, grade.getModule());
   }
+
+  /**
+   * Test getAcademicYear and setAcademicYear methods.
+   */
+  @Test
+  void testGetSetAcademicYear() {
+    grade.setAcademicYear("2024-2025");
+    assertEquals("2024-2025", grade.getAcademicYear());
+  }
+
+  /**
+   * Test constructor with academic year.
+   */
+  @Test
+  void testConstructorWithAcademicYear() {
+    Grade testGrade = new Grade(88, "2024-2025", student, module);
+
+    assertEquals(88, testGrade.getScore());
+    assertEquals("2024-2025", testGrade.getAcademicYear());
+    assertEquals(student, testGrade.getStudent());
+    assertEquals(module, testGrade.getModule());
+  }
 }
