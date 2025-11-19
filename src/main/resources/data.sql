@@ -1,4 +1,9 @@
--- Sample data for Student Grade Management System
+
+-- Reset tables so repeated context loads do not violate PK constraints.
+DELETE FROM grade;
+DELETE FROM registration;
+DELETE FROM module;
+DELETE FROM student;
 
 -- Insert sample students
 INSERT INTO student (id, first_name, last_name, username, email) VALUES
